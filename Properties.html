@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>العقارات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="myFunctions.js"> </script>
+</head>
+<body dir="rtl">
+<body>
+    <header>
+        <div class="nav-links">
+            <a href="index.html" class="page-About-us">Home</a>
+            <a href="aboutus.html" class="page-About-us">About Us</a>
+        </div>
+    </header>
+
+    <h2>    "العقارات"  </h2>
+    <table border="1">
+        <tr>
+          <th>المدينة</th>
+          <th>تفاصيل</th>
+          <th>الايجار الشهري</th>
+          <th> اظهار التفاصيل</th>
+          <th>اختيار</th>
+        </tr>
+        <tr>
+        <td>دمشق</td>
+        <td>شقة مساحتها 70 متر </td>
+        <td>500,000 ل.س</td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow1" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="دمشق" data-details="شقة مساحتها 70 متر" data-price="500,000 ل.س"></input></td>
+    </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow1">
+                    <h2>معلومات الشقة في دمشق </h2>
+                    <h2>المنطقة:ركن الدين      متوفر طاقة شمسية      الطابق الثالث</h2>
+                    <h2>الملكية:طابو اخضر      بلكون مساحته 10 متر           مفروشة</h2>
+                    <h2>تقسيمات الشقة:مؤلفة من غرفةوصالة </h2>
+            <h2><img src="images/ql.jpeg">
+              <img src="images/qq.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>حمص</td>
+        <td>دكان مساحته 50 متر</td>
+        <td>250,000 ل.س</td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow2" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="حمص" data-details="دكان مساحته 50 متر " data-price="250,000 ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow2">
+            <h2>معلومات الدكان في حمص </h2>
+            <h2> المنطقة:وادي الذهب</h2>
+            <h2>الملكية:طابو اخضر</h2>
+            <h2><img src="images/qr.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> دمشق</td>
+        <td>شقة فارغة مساحتها 110 متر</td>
+        <td>600,000 ل.س</td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow3" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="ريف دمشق" data-details="شقة فارغة مساحتها 110 متر" data-price=" 600,000 ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow3">
+            <h2>معلومات الشقة في دمشق</h2>
+            <h2>المنطقة:العمارة       متوفر كراج سيارات + طاقة شمسية         الطابق الثاني </h2>
+            <h2>الملكية:طابو اخضر              بلكون مساحة 19 متر                 غير مفروشة</h2>
+            <h2><img src="images/qs.jpeg">
+            <img src="images/qs2.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>حماة</td>
+        <td>عقار مساحته 1000 متر </td>
+        <td>900,000 ل,س</td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow4" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="حماة" data-details="عقار مساحته 1000 متر " data-price="900,000 ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow4">
+            <h2>معلومات العقار في حماة </h2>
+            <h2>المنطقة:حي الحاضر     متوفر طاقة شمسية مشتركة و تمديد مياه وكهرباء و مصعد      مؤلف من 7 طوابق لكل طابق 4 شقق</h2>
+            <h2>الملكية:طابو اخضر           مساحة الغرف 5 متر       مساحةالتراس لكل شقة 11 متر       مساحة المطبخ 6 متر </h2>
+            <h2><img src="images/qg1.jpeg">
+              <img src="images/qg.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>طرطوس</td>
+        <td>فندق مساحته 800 متر</td>
+        <td>400,000 ل.س </td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow5" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="طرطوس" data-details="فندق مساحته 800 متر " data-price="400,000 ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow5">
+            <h2>معلومات الفندق في طرطوس</h2>
+            <h2>المنطقة:بانياس     متوفر غرف للاستراحة + بوفيه طعام     مؤلف من 4 طوابق </h2>
+            <h2>الملكية:طابو اخضر          مساحة الغرفة 6 متر                     مفروشة</h2>
+            <h2><img src="images/qw1.jpeg">
+              <img src="images/qw2.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>ريف دمشق</td>
+        <td>فيلا مساحتها 450 متر </td>
+        <td> ل.س300,000 </td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow6" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="ريف دمشق" data-details="فيلا مساحتها 450 متر" data-price="300,000 ل.س "></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow6">
+            <h2>معلومات الفيلا في ريف دمشق</h2>
+            <h2>المنطقة:جديدة الوادي الشيباني       متوفر كراج لسيارتين + طاقة شمسية        مؤلفة من 2 طوابق</h2>
+            <h2>الملكية:طابو اخضر              لكل طابق 2 غرفة وصالة         يوجد مسبح صيفي      مفروشة</h2>
+            <h2><img src="images/qz.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>دمشق</td>
+        <td>مخبر طبي  مساحته 750 متر</td>
+        <td>670,000 ل,س </td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow7" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="دمشق" data-details=" مخبر طبي مساحته 750 متر" data-price="670,000 ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow7">
+            <h2>معلومات المخبر الطبي في دمشق </h2>
+            <h2>المنطقة:المهاجرين        متوفر معدات  طبية         طابق ارضي</h2>
+            <h2>الملكية:طابو    مؤلف من 10 غرف عيادات طبية     مجهز بالكامل </h2>
+            <h2><img src="images/qp1.jpeg">
+              <img src="images/qp2.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>حماة</td>
+        <td>شقة مساحتها 90 متر </td>
+        <td> ل.س200,000 </td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow8" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="حماة" data-details="شقة مساحتها 90 متر " data-price=" 200,000ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow8">
+            <h2>معلومات الشقة في حماة</h2>
+            <h2>المنطقة:حي السخانة     طابق رابع  </h2>
+            <h2>الملكية:طابو اخضر    مؤلفة من غرفتين وصالة     مفروشة</h2>
+            <h2><img src="images\qx.jpeg">
+              <img src="images\qx2.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>حلب</td>
+        <td>مقسم هاتف مساحته 200 متر </td>
+        <td> ل.س 950,000</td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow9" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="حلب" data-details="مقسم هاتف مساحته 200 متر " data-price=" 950,000ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow9">
+            <h2>معلومات عن مقسم الهاتف </h2>
+            <h2>المنطقة:الشهباء     قطع وصولة للدفع للخط الهاتف    يوجد انترنت   </h2>
+            <h2>الملكية:حكم    مؤلف من مكاتب للدفع     </h2>
+            <h2><img src="images/qv.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>اللاذقية</td>
+        <td>استراحة مساحتها 100 متر </td>
+        <td> ل.س500,000</td>
+        <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+            <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow10" style="display: none;">      </td>
+        <td><input type="radio" class="selectBtn" name="property" data-city="اللاذقية" data-details="استراحة مساحتها 100 متر " data-price=" 500,000ل.س"></input></td>
+      </tr>
+      <tr class="extraDetailsRow">
+        <td colspan="5">
+          <div class="propertyDetails" id="detailsWindow10">
+            <h2>معلومات عن الاستراحة في اللاذقية </h2>
+            <h2>المنطقة:مشقيتا    متوفر طاقة شمسية    طابق ارضي    </h2>
+            <h2>الملكية:طابو اخضر     مؤلفة من غرفتين     مفروشة   </h2>
+            <h2><img src="images/QF.jpeg"></h2>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div id="customerInfo">
+        <input type="text" id="fullName" placeholder="الاسم الكامل">
+        <input type="text" id="nationalId" placeholder="الرقم الوطني" required>
+        <input type="date" id="birthdate" placeholder="تاريخ الولادة">
+        <input type="tel" id="mobileNumber" placeholder="رقم الموبايل">
+        <input type="email" id="email" placeholder="البريد الإلكتروني">
+        <input type="text" id="captchaInput" placeholder="CAPTCHA">
+        <img id="captchaImage" alt="CAPTCHA">
+        <button class="captcha-button" onclick="refreshCaptcha()">تحديث CAPTCHA</button>
+        <br> 
+        <button id="submitBtn">إرسال</button>
+      </div>
+      <button id="continueBtn">متابعة</button>
+
+</body>
+</html>
